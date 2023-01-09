@@ -1,0 +1,156 @@
+```
+{
+  editorVersion: '1.74.2',
+  pluginVersion: '1.0.348',
+  editorType: 'VSCode',
+  osVersion: 'darwin 22.1.0',
+  nodeVersion: 'v16.16.0',
+  coreVersion: '1.0.1364',
+  checksum: 'M2VkNGM1NjhiZTM0ZDBlMzg4Y2I1ZDU4ZDA4YmFlMjksMTcwNDE1MzYwMDAwMCww',
+  config: {
+    diagnostics: {
+      vitest: {
+        file: { config: "import { defineConfig } from 'vitest/config'\n\nexport default defineConfig({\n  test: {\n    // ...\n  },\n})" },
+        config: {
+          allowOnly: true,
+          watch: true,
+          globals: false,
+          environment: 'node',
+          threads: true,
+          clearMocks: false,
+          restoreMocks: false,
+          mockReset: false,
+          include: [ '**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}' ],
+          exclude: [ '**/node_modules/**', '**/dist/**', '**/cypress/**', '**/.{idea,git,cache,output,temp}/**', '**/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress}.config.*' ],
+          testTimeout: 5000,
+          hookTimeout: 10000,
+          teardownTimeout: 1000,
+          isolate: true,
+          watchExclude: [ '**/node_modules/**', '**/dist/**' ],
+          forceRerunTriggers: [ '**/package.json/**', '**/{vitest,vite}.config.*/**' ],
+          update: false,
+          reporters: [ 'default' ],
+          silent: false,
+          ui: false,
+          uiBase: '/__vitest__/',
+          open: true,
+          css: { include: [], modules: { classNameStrategy: 'stable' } },
+          coverage: {
+            provider: 'c8',
+            enabled: false,
+            clean: true,
+            cleanOnRerun: false,
+            reportsDirectory: './coverage',
+            excludeNodeModules: true,
+            exclude: [
+              'coverage/**',
+              'dist/**',
+              'packages/*/test{,s}/**',
+              '**/*.d.ts',
+              'cypress/**',
+              'test{,s}/**',
+              'test{,-*}.{js,cjs,mjs,ts,tsx,jsx}',
+              '**/*{.,-}test.{js,cjs,mjs,ts,tsx,jsx}',
+              '**/*{.,-}spec.{js,cjs,mjs,ts,tsx,jsx}',
+              '**/__tests__/**',
+              '**/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress}.config.*',
+              '**/.{eslint,mocha,prettier}rc.{js,cjs,yml}'
+            ],
+            reporter: [ 'text', 'html', 'clover', 'json' ],
+            allowExternal: false,
+            extension: [
+              '.js',  '.cjs',
+              '.mjs', '.ts',
+              '.mts', '.cts',
+              '.tsx', '.jsx',
+              '.vue', '.svelte'
+            ]
+          },
+          fakeTimers: { loopLimit: 10000, shouldClearNativeTimers: true, toFake: [ 'setTimeout', 'clearTimeout', 'setInterval', 'clearInterval', 'setImmediate', 'clearImmediate', 'Date' ] },
+          maxConcurrency: 5,
+          dangerouslyIgnoreUnhandledErrors: false,
+          typecheck: {
+            checker: 'tsc',
+            include: [ '**/*.{test,spec}-d.{ts,js}' ],
+            exclude: [ '**/node_modules/**', '**/dist/**', '**/cypress/**', '**/.{idea,git,cache,output,temp}/**', '**/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress}.config.*' ]
+          },
+          slowTestThreshold: 300,
+          defines: {},
+          root: '<homeDir>/Programming/slowVitest',
+          mode: [],
+          deps: { inline: [ {}, {}, {}, {}, {}, {}, '@nuxt/test-utils' ], registerNodeLoader: false },
+          snapshotOptions: { snapshotFormat: {}, updateSnapshot: 'new' },
+          setupFiles: [],
+          cache: { dir: '<homeDir>/Programming/slowVitest/node_modules/.vitest' },
+          sequence: { hooks: 'parallel' },
+          package: {
+            version: '0.26.3',
+            urls: { hooks: 'file://<homeDir>/.vscode/extensions/wallabyjs.wallaby-vscode-1.0.348/wallaby8f292f/runners/node/hooks.mjs' },
+            paths: { root: '<homeDir>/Programming/slowVitest/node_modules/vitest', dist: '<homeDir>/Programming/slowVitest/node_modules/vitest/dist' }
+          }
+        }
+      }
+    },
+    testFramework: { version: 'vitest@0.14.0', configurator: 'vitest@0.14.0', reporter: 'vitest@0.14.0', starter: 'vitest@0.14.0', autoDetected: true },
+    preserveComments: false,
+    extractComments: true,
+    files: [
+      { pattern: '**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}', ignore: true, trigger: true, load: true, file: true },
+      { pattern: '**/node_modules/**', ignore: true, trigger: true, load: true, file: true, test: true },
+      { pattern: '**/dist/**', ignore: true, trigger: true, load: true, file: true, test: true },
+      { pattern: '**/cypress/**', ignore: true, trigger: true, load: true, file: true, test: true },
+      { pattern: '**/.{idea,git,cache,output,temp}/**', ignore: true, trigger: true, load: true, file: true, test: true },
+      { pattern: '**/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress}.config.*', ignore: true, trigger: true, load: true, file: true, test: true },
+      { pattern: '**/*.*', ignore: false, trigger: true, load: true, order: 1 }
+    ],
+    tests: [
+      { pattern: '**/node_modules/**', ignore: true, trigger: true, load: true, test: true, file: false },
+      { pattern: '**/dist/**', ignore: true, trigger: true, load: true, test: true, file: false },
+      { pattern: '**/cypress/**', ignore: true, trigger: true, load: true, test: true, file: false },
+      { pattern: '**/.{idea,git,cache,output,temp}/**', ignore: true, trigger: true, load: true, test: true, file: false },
+      { pattern: '**/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress}.config.*', ignore: true, trigger: true, load: true, test: true, file: false },
+      { pattern: '**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}', ignore: false, trigger: true, load: true, test: true, order: 2 }
+    ],
+    workers: { initial: 1, regular: 1, recycle: false },
+    filesWithNoCoverageCalculated: [],
+    runAllTestsInAffectedTestFile: false,
+    updateNoMoreThanOneSnapshotPerTestFileRun: false,
+    compilers: {},
+    smartStart: [ { test: true, source: false, pattern: '**/*', startMode: 'open' }, { test: false, source: true, pattern: '**/*', startMode: 'edit' } ],
+    logLimits: { inline: { depth: 5, elements: 5000 }, values: { default: { stringLength: 200 }, autoExpand: { elements: 5000, stringLength: 8192, depth: 10 } } },
+    preprocessors: {},
+    maxConsoleMessagesPerTest: 100,
+    autoConsoleLog: true,
+    delays: { run: 0, edit: 100, update: 0 },
+    teardown: undefined,
+    hints: {
+      ignoreCoverage: '__REGEXP /ignore coverage|istanbul ignore/',
+      ignoreCoverageForFile: '__REGEXP /ignore file coverage/',
+      commentAutoLog: '?',
+      testFileSelection: { include: '__REGEXP /file\\.only/', exclude: '__REGEXP /file\\.skip/' }
+    },
+    automaticTestFileSelection: true,
+    runSelectedTestsOnly: true,
+    mapConsoleMessagesStackTrace: false,
+    extensions: {},
+    env: {
+      type: 'node',
+      params: { runner: '--experimental-loader=file://<homeDir>/.vscode/extensions/wallabyjs.wallaby-vscode-1.0.348/wallaby8f292f/runners/node/hooks.mjs' },
+      runner: '<homeDir>/.nvm/versions/node/v16.16.0/bin/node',
+      viewportSize: { width: 800, height: 600 },
+      options: { width: 800, height: 600 },
+      bundle: true
+    },
+    reportUnhandledPromises: true,
+    slowTestThreshold: 75,
+    lowCoverageThreshold: 80,
+    runAllTestsWhenNoAffectedTests: true,
+    symlinkNodeModules: undefined,
+    configCode: 'auto.detect#-2054068591',
+    testLocations: [ 'index.test.ts' ]
+  },
+  packageJSON: { dependencies: { vitest: '^0.26.3' }, devDependencies: undefined },
+  fs: { numberOfFiles: 6 },
+  debug: []
+}
+```

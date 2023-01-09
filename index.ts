@@ -1,0 +1,1 @@
+export const testFunc1 = (a: number, b: number) => a + b
